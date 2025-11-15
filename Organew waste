@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioRenew — Organic Waste to Clean Energy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+        }
+
+        /* Header */
+        header {
+            background: url('https://th.bing.com/th/id/OIP.NQDDG7a3coHwpl0OU7AhyAHaE7?w=257&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        nav {
+            background: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Section common style */
+        section {
+            position: relative;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 10px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); /* dark overlay for readability */
+            border-radius: 10px;
+            z-index: 0;
+        }
+
+        section * {
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        /* Specific section backgrounds */
+        #home { background-image: url('https://millerwaste.ca/wp-content/uploads/2022/05/MillerWasteSystems_OrganicWasteRecycling-min.jpg'); }
+        #mission { background-image: url('https://th.bing.com/th/id/R.2c755787a499c787b79be8282695b250?rik=%2f1VzyPLaAMlzMQ&riu=http%3a%2f%2fwww.panorama-consulting.com%2fwp-content%2fuploads%2f2015%2f07%2fWTE-Image2.jpg&ehk=GeyQ2ZVLiRbW%2brT0QBNtPCUUirzSLPnSF95ftxqZoi4%3d&risl=&pid=ImgRaw&r=0'); }
+        #about { background-image: url('https://th.bing.com/th/id/OIP.Niq1biMquQkYRdekgSHcTAHaE8?w=270&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1'); }
+        #project { background-image: url('https://www.planning.nsw.gov.au/sites/default/files/2023-02/EnergyFromWasteDiagram-800pixels.jpg'); }
+        #gallery { background-image: url('https://images.unsplash.com/photo-1565120130290-3f00423d5292'); }
+   /* Team and Contact sections with white background */
+#team, #contact {
+    background-color: white;
+    color: #2e7d32;
+    text-shadow: none;
+}
+
+#team::before, #contact::before {
+    background: rgba(0,0,0,0); /* remove overlay */
+}
+
+}
+
+        /* Team section */
+        .team-box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            background: rgba(232, 245, 233, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 40%;
+            margin: 10px;
+            text-align: center;
+            color: #2e7d32;
+            text-shadow: none;
+        }
+
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Gallery images */
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery-images img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1b5e20;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .member { width: 80%; }
+            .gallery-images img { width: 80%; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BioRenew — Organic Waste to Renewable Energy</h1>
+        <p>Transforming Biodegradable Waste into Clean and Sustainable Power</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#about">About Us</a>
+        <a href="#project">Project</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to BioRenew!</h2>
+        <p>
+            BioRenew is a student-led environmental initiative that focuses on turning 
+            organic waste into renewable energy. Our goal is to promote sustainable 
+            waste management practices while developing practical solutions that benefit 
+            both the community and the environment.
+        </p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>
+            To educate and empower communities in adopting innovative, eco-friendly 
+            technologies that transform biodegradable waste into useful energy sources.
+        </p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            BioRenew was founded by students from the Technological University of the Philippines 
+            who are passionate about sustainability and environmental engineering. This project was 
+            developed as part of our academic research focusing on renewable energy production using 
+            organic waste.
+        </p>
+        <p><strong>Our Vision:</strong> A future where waste becomes a valuable source of clean energy.</p>
+        <p><strong>Our Objectives:</strong></p>
+        <ul>
+            <li>Promote sustainable waste management.</li>
+            <li>Develop low-cost renewable energy solutions.</li>
+            <li>Spread environmental awareness through educational outreach.</li>
+            <li>Encourage innovation in green technology.</li>
+        </ul>
+    </section>
+
+    <section id="project">
+        <h2>Our Project</h2>
+        <p>
+            Our research focuses on converting organic waste into renewable energy through 
+            anaerobic digestion, producing biogas that can be used for cooking, electricity, 
+            or heating. We aim to develop an affordable model that communities can adopt.
+        </p>
+        <h3>Features:</h3>
+        <ul>
+            <li>Efficient breakdown of organic waste.</li>
+            <li>Biogas generation for energy use.</li>
+            <li>Environment-friendly and low-cost system design.</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+            <li>Biogas digester system</li>
+            <li>Gas storage and pressure valves</li>
+            <li>Sensors for monitoring temperature and pH</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="https://img.freepik.com/free-vector/biofuel-production-infographics-poster-with-types-organic-waste-anaerobic-digestion-biogas-usage-3d-isometric-vector-illustration_1284-80485.jpg?w=1480&t=st=1679568243~exp=1679568843~hmac=c535b87dac048789733b53e89467de1df9c82fb9a3f34d7922f74290be925c3e" alt="Organic waste to Renewable energy Diagram">
+            <img src="https://cdn.siasat.com/wp-content/uploads/2022/01/Electricity_JAN2.jpg" alt="Products">
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="team-box">
+            <div class="member">
+                <img src="https://scontent.fmnl40-2.fna.fbcdn.net/v/t39.30808-6/545189509_1856857124894006_6329707190979646325_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=669761&_nc_eui2=AeHZOmXpIKxo_hQli-RK6A3GgW8XnSGpws-BbxedIanCz_KZsvC0jYHgTsThVQHV-r63sTrW9SpVrO5yyQdukww-&_nc_ohc=GRFzo_WXGf8Q7kNvwEIU3MC&_nc_oc=Adk22hT927clmwXyKuEfzc7hOPRtD9oGxAjsXN_0KEFrZN3EDRgpcEd5QkmatyXUAow&_nc_zt=23&_nc_ht=scontent.fmnl40-2.fna&_nc_gid=_PnhORXslkERMV9eK89now&oh=00_AfiAZ0b2FYQLRzd7dmEuUrvNSirkpPe8QmpL5Wp53TzOBQ&oe=691DEA58" alt="Audrie C. Ambos">
+                <h3>Audrie C. Ambos</h3>
+                <p>Project Leader</p>
+            </div>
+            <div class="member">
+                <img src="https://scontent.fmnl40-2.fna.fbcdn.net/v/t39.30808-6/485735097_1723727438206976_6720764782858144085_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=669761&_nc_eui2=AeFJ16AfydfebLgD1ixtALQC523mWhbS1-znbeZaFtLX7EJrEDeeeB2nLyVaZ4mROzkhVCDm7JxOHyUWMdjIkb9W&_nc_ohc=A15ycQsFdx4Q7kNvwGFUMIO&_nc_oc=AdmFgn1T2IdjMEqMS8VFRc416wdqZa5wv9cyy7LrxEEDijWeAgp2Ix-lEEYUgp_XPDI&_nc_zt=23&_nc_ht=scontent.fmnl40-2.fna&_nc_gid=4Wslb3olKzG_AWHRhoYaHg&oh=00_Afjm-1H9VpSOWWO6Hv2me9Lxf4SMXtQW0HZRFUZDXTCImw&oe=691DF949" alt="Raiza Anne Sayson">
+                <h3>Raiza Anne Sayson</h3>
+                <p>Project Leader</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> ambosaudrie08@gmail.com</p>
+        <p><strong>Email:</strong> sraizaanne@gmail.com</p>
+        <p><strong>Address:</strong> Technological University of the Philippines, Philippines</p>
+    </section>
+
+    <footer>
+        <p>© 2025 BioRenew Project — All Rights Reserved</p>
+    </footer>
+</body>
+</html>
